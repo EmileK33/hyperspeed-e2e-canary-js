@@ -1,19 +1,18 @@
 {
-  "name": "app",
+  "name": "hyperspeed-canary-recipes",
+  "version": "0.0.1",
   "private": true,
-  "version": "0.0.0",
-  "engines": {
-    "node": ">=20"
-  },
+  "type": "module",
+  "description": "Canary plain-JavaScript (no TypeScript) project for HyperSpeed build-plan fixture-matrix validation (issue #143). Tiny static recipe browser with no database — exercises the services-absent path and the dynamic-JS contract-proof cell. Fixture target for run-canary.mjs --fixture js-no-db.",
   "scripts": {
     "test": "vitest run",
     "test:integration": "vitest run tests/integration"
   },
   "dependencies": {
-    "lodash-es": "^4.17"
+    "lodash-es": "^4.17.21"
   },
   "devDependencies": {
-    "jsdom": "^24.0",
-    "vitest": "^2.0"
+    "vitest": "^1.6.0",
+    "jsdom": "^24.0.0"
   }
 }
